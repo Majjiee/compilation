@@ -1,0 +1,23 @@
+caractere cCC
+entier nBrLigneS
+afficher ( " entrer un caractere : " )
+cCC = saisir ( caractere )
+afficher ( " entrer le nombre de lignes : " )
+nBrLigneS = saisir ( entier )
+
+entier iII , jJJ
+si nBrLigneS % 2 != 0 alors
+	pour iII de 0 jsq nBrLigneS - 1 pas 1	#impair
+		pour jJJ de 0 jsq nBrLigneS - iII pas 1
+			afficher ( " " )#Début du code
+		pour jJJ de 0 jsq ( iII * 2 ) + 1 pas 1
+			afficher ( cCC )
+		afficher ( )
+sinon
+	pour iII de nBrLigneS -1 jsq -1 pas -1	#impair
+		pour jJJ de 0 jsq nBrLigneS - iII pas 1
+			afficher ( " " )
+		pour jJJ de 0 jsq ( iII * 2 ) + 1 pas 1
+			afficher ( cCC )
+		afficher ( )
+finSi
